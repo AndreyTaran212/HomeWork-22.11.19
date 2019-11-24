@@ -15,3 +15,11 @@ function outputOnDisplay(array) {
     }
     document.write('</ol>');
 }
+
+function findFruit(array) {
+
+    let n = prompt('which fruit to find?');
+    n = n.toLowerCase();
+    return array.indexOf(n);
+
+}

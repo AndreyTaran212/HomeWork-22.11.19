@@ -19,18 +19,17 @@ for (let i=0; i<5; i++ ){
 
 function addItemFromMassiv(array1,array2) {
     let result1 = [];
-    let result2 = [];
     for(let elem of array1){
         if(!result1.includes(elem)){
             result1.push(elem);
         }
     }
     for(let elem of array2){
-        if(!result2.includes(elem) && !result1.includes(elem)){
-            result2.push(elem);
+        if(!result1.includes(elem)){
+            result1.push(elem);
         }
     }
-    console.log(result1.concat(result2));
+  console.log(result1);
 }
 
 function addUniqueElement(array1, array2) {
